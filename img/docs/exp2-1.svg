@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="1200" height="800" role="img" aria-label="Dokumentasi exp2-1">
+  <defs>
+    <linearGradient id="gexp2-1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#22e3c0" stop-opacity=".34"/>
+      <stop offset=".55" stop-color="#0b0619" stop-opacity=".96"/>
+      <stop offset="1" stop-color="#7c5cff" stop-opacity=".26"/>
+    </linearGradient>
+    <pattern id="pexp2-1" width="48" height="48" patternUnits="userSpaceOnUse">
+      <path d="M48 0H0v48" fill="none" stroke="rgba(255,255,255,.05)" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="800" fill="#070310"/>
+  <rect width="1200" height="800" fill="url(#gexp2-1)"/>
+  <rect width="1200" height="800" fill="url(#pexp2-1)"/>
+  <g stroke="#7c5cff" stroke-width="2" fill="none" opacity=".55">
+    <rect x="430" y="300" width="340" height="220" rx="16"/>
+    <path d="M470 470l70-74 58 58 46-46 76 82"/>
+    <circle cx="700" cy="360" r="26"/>
+  </g>
+  <text x="600" y="596" text-anchor="middle" font-family="monospace" font-size="22" letter-spacing="8" fill="#8f86b8">DOKUMENTASI exp2-1</text>
+  <text x="600" y="640" text-anchor="middle" font-family="monospace" font-size="15" letter-spacing="4" fill="#5d5680">GANTI DENGAN FOTO KAMU</text>
+</svg>

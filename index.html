@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="theme-color" content="#070310">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kevin Qiendra Syahputra | Portfolio — Web &amp; Mobile Developer</title>
+
+<!-- SEO & LINK PREVIEW -->
+<meta name="description" content="Portfolio Kevin Qiendra Syahputra — web developer dan mobile developer. Project, sertifikat, skill, dan terminal interaktif.">
+<meta name="keywords" content="Kevin Qiendra Syahputra, portfolio, web developer, mobile developer, Laravel, Flutter, JavaScript">
+<meta name="author" content="Kevin Qiendra Syahputra">
+<link rel="canonical" href="http://localhost/portfolio-Kevin/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Kevin Qiendra Syahputra | Portfolio">
+<meta property="og:description" content="Web &amp; mobile developer. Lihat project, sertifikat, dan terminal interaktif.">
+<meta property="og:url" content="http://localhost/portfolio-Kevin/">
+<meta property="og:image" content="images/og-image.png">
+<meta property="og:locale" content="id_ID">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Kevin Qiendra Syahputra | Portfolio">
+<meta name="twitter:description" content="Web &amp; mobile developer. Project, sertifikat, dan terminal interaktif.">
+<meta name="twitter:image" content="images/og-image.png">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23070310'/%3E%3Ctext x='32' y='43' font-family='monospace' font-size='30' font-weight='700' text-anchor='middle' fill='%237c5cff'%3E%26lt;K/%26gt;%3C/text%3E%3C/svg%3E">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Kevin Qiendra Syahputra",
+  "jobTitle": "Web & Mobile Developer",
+  "email": "mailto:kevin123qiendra@gmail.com",
+  "url": "http://localhost/portfolio-Kevin/",
+  "sameAs": ["https://github.com/kevinqiendra", "https://www.instagram.com/kepink4hh/"]
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="locked">
+
+<canvas id="code-bg" aria-hidden="true"></canvas>
+
+<!-- ================= INTRO / LOADING — code editor boot ================= -->
+<div id="intro" aria-label="memuat">
+  <div class="intro-panel top"></div>
+  <div class="intro-panel bottom"></div>
+  <div class="intro-beam" aria-hidden="true"></div>
+  <span class="hud hud-tl" aria-hidden="true">KEVIN.DEV // portfolio.build</span>
+  <span class="hud hud-tr" id="introClock">--:--:--</span>
+  <span class="hud hud-bl" aria-hidden="true">html · css · js · php · dart · python</span>
+
+  <div class="intro-center">
+    <div class="intro-logo" data-text="KEVIN">KEVIN</div>
+
+    <div class="ed">
+      <div class="ed-bar">
+        <div class="ed-dots" aria-hidden="true"><i></i><i></i><i></i></div>
+        <div class="ed-tabs" id="edTabs"></div>
+      </div>
+      <div class="ed-code" id="edCode" aria-hidden="true"></div>
+    </div>
+
+    <div class="langs" id="introLangs" aria-hidden="true"></div>
+    <div class="intro-log" id="introLog" aria-hidden="true"></div>
+    <div class="intro-bar" aria-hidden="true"><i id="introFill"></i></div>
+    <div class="intro-pct" id="introPct">build 0%</div>
+    <button type="button" id="introSkip">lewati &gt;&gt;</button>
+  </div>
+</div>
+
+<!-- ================= SCROLL PROGRESS LINE ================= -->
+<div class="scroll-progress" aria-hidden="true"><i id="scrollBar"></i></div>
+
+<!-- ================= HEADER ================= -->
+<header>
+  <nav class="navbar">
+    <a href="#home" class="logo">&lt;<b>KEVIN</b><span>/&gt;</span></a>
+    <ul class="nav-menu" id="navMenu">
+      <li><a href="#home" data-i18n="nav_home">Home</a></li>
+      <li><a href="#about" data-i18n="nav_about">About</a></li>
+      <li><a href="#education" data-i18n="nav_edu">Education</a></li>
+      <li><a href="#experience" data-i18n="nav_exp">Experience</a></li>
+      <li><a href="#skills" data-i18n="nav_skills">Skills</a></li>
+      <li><a href="#projects" data-i18n="nav_projects">Projects</a></li>
+      <li><a href="#certificates" data-i18n="nav_certs">Certificates</a></li>
+      <li><a href="#terminal" data-i18n="nav_terminal">Terminal</a></li>
+      <li><a href="#contact" data-i18n="nav_contact">Contact</a></li>
+    </ul>
+    <div class="nav-right">
+      <button type="button" class="lang-btn" id="langBtn">EN</button>
+      <button type="button" class="menu-toggle" id="menuToggle" aria-label="menu">☰</button>
+    </div>
+  </nav>
+</header>
+
+<main>
+
+<!-- ================= HERO ================= -->
+<section class="hero" id="home">
+  <div class="hero-ghost" aria-hidden="true">
+    <img src="img/profile-cutout.png" alt="">
+  </div>
+  <div class="hero-text">
+    <p class="hero-greet" id="heroGreet">&gt; console.log("Halo, Teman-teman!");</p>
+    <h1 class="hero-name">KEVIN<br><span>QIENDRA</span></h1>
+    <p class="hero-role"><b>$</b> <span id="typedRole">Web Developer</span><i class="tick"></i></p>
+    <p class="hero-desc" data-i18n="hero_desc">
+      Saya Kevin Qiendra Syahputra — membangun antarmuka web dan aplikasi mobile yang rapi, cepat, dan enak dipakai.
+    </p>
+    <div class="hero-actions">
+      <a href="#projects" class="btn primary" data-i18n="btn_projects">Lihat Project</a>
+      <a href="cv-kevin.pdf" class="btn ghost" download data-i18n="btn_cv">Download CV</a>
+    </div>
+    <ul class="hero-socials">
+      <li><a href="https://github.com/kevinqiendra" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+      <li><a href="https://www.instagram.com/kepink4hh/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+      <li><a href="mailto:kevin123qiendra@gmail.com">Email</a></li>
+    </ul>
+  </div>
+
+  <div class="hero-card" id="lanyard">
+    <canvas class="cord"></canvas>
+    <div class="badge" id="badge">
+      <div class="badge-clip"></div>
+      <div class="badge-slot"></div>
+      <div class="badge-bar">
+        <span class="badge-chip"><i></i></span>
+        <span class="badge-status"><i class="status-pulse"></i>SYS · VERIFIED</span>
+      </div>
+      <div class="badge-photo">
+        <img src="img/profile.jpeg" alt="Foto Kevin Qiendra Syahputra" id="badgePhoto">
+        <span class="photo-corners"></span>
+      </div>
+      <div class="badge-id">ID // 2601 · DEV</div>
+      <h2 class="badge-name">KEVIN<br>QIENDRA</h2>
+      <p class="badge-role"><span>Web &amp; Mobile Dev</span></p>
+      <div class="badge-qr-box">
+        <div class="badge-qr" id="qrCanvas" aria-label="QR portfolio"></div>
+        <span class="qr-tag">SCAN PASS</span>
+      </div>
+      <span class="badge-shine"></span>
+      <span class="badge-glow"></span>
+    </div>
+  </div>
+</section>
+
+<!-- ================= MARQUEE ================= -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track">
+    <div class="marquee-row">
+      <span>KEVIN QIENDRA SYAHPUTRA</span><span class="mq-sep">✦</span>
+      <span>WEB DEVELOPER</span><span class="mq-sep">✦</span>
+      <span>MOBILE DEV</span><span class="mq-sep">✦</span>
+      <span>UI CRAFT</span><span class="mq-sep">✦</span>
+      <span>LARAVEL</span><span class="mq-sep">✦</span>
+      <span>FLUTTER</span><span class="mq-sep">✦</span>
+    </div>
+    <div class="marquee-row">
+      <span>KEVIN QIENDRA SYAHPUTRA</span><span class="mq-sep">✦</span>
+      <span>WEB DEVELOPER</span><span class="mq-sep">✦</span>
+      <span>MOBILE DEV</span><span class="mq-sep">✦</span>
+      <span>UI CRAFT</span><span class="mq-sep">✦</span>
+      <span>LARAVEL</span><span class="mq-sep">✦</span>
+      <span>FLUTTER</span><span class="mq-sep">✦</span>
+    </div>
+  </div>
+</div>
+
+<!-- ================= ABOUT ================= -->
+<section class="section" id="about">
+  <p class="kicker reveal">// <span data-i18n="kicker_about">tentang</span></p>
+  <h2 class="section-title reveal" data-i18n="t_about">Tentang Saya</h2>
+
+  <div class="about-grid">
+    <div class="about-text reveal">
+      <h3 data-i18n="about_h3">Kenalan Dulu</h3>
+      <p data-i18n="about_p1">Halo, saya Kevin Qiendra Syahputra. Saya tertarik pada pengembangan web, aplikasi mobile, dan sistem informasi.</p>
+      <p data-i18n="about_p2">Saya suka membangun antarmuka yang interaktif dan mempelajari bagaimana sebuah produk bisa terasa cepat, jelas, dan menyenangkan dipakai.</p>
+
+      <ul class="about-info">
+        <li><span data-i18n="lbl_name">Nama</span><b>Kevin Qiendra Syahputra</b></li>
+        <li><span data-i18n="lbl_job">Profesi</span><b data-i18n="job_val">Pelajar</b></li>
+        <li><span data-i18n="lbl_loc">Lokasi</span><b>Indonesia</b></li>
+        <li><span data-i18n="lbl_focus">Fokus</span><b>Web &amp; Mobile</b></li>
+      </ul>
+    </div>
+
+    <div class="stats reveal">
+      <div class="stat"><b class="count" data-to="12">0</b><span data-i18n="st_projects">Project</span></div>
+      <div class="stat"><b class="count" data-to="8" data-suffix="+">0</b><span data-i18n="st_certs">Sertifikat</span></div>
+      <div class="stat"><b class="count" data-to="3">0</b><span data-i18n="st_years">Tahun Belajar</span></div>
+      <div class="stat"><b class="count" data-to="9">0</b><span data-i18n="st_tech">Teknologi</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= EDUCATION ================= -->
+<section class="section" id="education">
+  <p class="kicker reveal">// <span data-i18n="kicker_edu">pendidikan</span></p>
+  <h2 class="section-title reveal" data-i18n="t_edu">Pendidikan</h2>
+
+  <div class="timeline">
+    <article class="tl-item reveal">
+      <span class="tl-dot"></span>
+      <div class="tl-body">
+        <span class="tl-date">2024 — Sekarang</span>
+        <h3>SMK</h3>
+        <p data-i18n="edu_sma">Pendidikan menengah atas (Kejuruan) <br> Dan sekarang saya bersekolah di SMK MUHAMMADIYAH 2 PEKANBARU. Awal ketertarikan pada teknologi dan juga pemrograman.</p>
+      </div>
+    </article>
+    <article class="tl-item reveal">
+      <span class="tl-dot"></span>
+      <div class="tl-body">
+        <span class="tl-date">2021 — 2024</span>
+        <h3>SMP</h3>
+        <p data-i18n="edu_smp">Pendidikan menengah pertama. <br>lalu saya lanjut bersekolah SMP di SMPIT WIDYA CENDEKIA KOTA SERANG (SWASTA) dari umur 12 tahun sampai 15 tahun </p>
+      </div>
+    </article>
+    <article class="tl-item reveal">
+      <span class="tl-dot"></span>
+      <div class="tl-body">
+        <span class="tl-date">2015 — 2021</span>
+        <h3>SD</h3>
+        <p data-i18n="edu_sd">Awal perjalanan belajar <br> saya bersekolah di SD Insantama Serang (SWASTA) dari umur 6 tahun sampai 12 tahun .</p>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- ================= EXPERIENCE ================= -->
+<section class="section" id="experience">
+  <p class="kicker reveal">// <span data-i18n="kicker_exp">pengalaman</span></p>
+  <h2 class="section-title reveal" data-i18n="t_exp">Pengalaman &amp; Organisasi</h2>
+  <p class="section-sub reveal" data-i18n="exp_sub">Magang, kepanitiaan, dan organisasi yang pernah saya ikuti.</p>
+
+  <div class="timeline">
+    <article class="tl-item reveal">
+      <span class="tl-dot"></span>
+      <div class="tl-body">
+        <span class="tl-date">2026</span>
+        <h3>Praktek Kerja Lapangan di PT PLN ICONPLUS RIAU</h3>
+        <p data-i18n="exp1">Mengelola kebutuhan digital organisasi: website kegiatan, desain publikasi, dan dokumentasi.</p>
+      </div>
+    </article>
+    <article class="tl-item reveal">
+      <span class="tl-dot"></span>
+      <div class="tl-body">
+        <span class="tl-date">2026 — Sekarang</span>
+        <h3>Koor Publikasi, Dekorasi, &amp; Dokumentasi</h3>
+        <p data-i18n="exp1">Mengelola kebutuhan digital organisasi: website kegiatan, desain publikasi, dan dokumentasi.</p>
+      </div>
+    </article>
+    <article class="tl-item reveal">
+      <span class="tl-dot"></span>
+      <div class="tl-body">
+        <span class="tl-date">2025 - 2026</span>
+        <h3>Pakluh Organisasi Paskibra</h3>
+        <p data-i18n="exp2">Memimpin Organisasi se-angkatan dan juga angkatan dibawah nya.</p>
+      </div>
+    </article>
+    <article class="tl-item reveal">
+      <span class="tl-dot"></span>
+      <div class="tl-body">
+        <span class="tl-date">2022 - 2023</span>
+        <h3>Ketua Bidang Keagamaan Organisasi Intra Sekolah (OSIS) SMP</h3>
+        <p data-i18n="exp3">Bagian publikasi dan dokumentasi acara, termasuk pengelolaan konten media sosial.</p>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- ================= SKILLS ================= -->
+<section class="section" id="skills">
+  <p class="kicker reveal">// <span data-i18n="kicker_skills">keahlian</span></p>
+  <h2 class="section-title reveal" data-i18n="t_skills">Skill</h2>
+
+  <div class="tech-grid reveal" id="techGrid"></div>
+
+  <h3 class="sub-title reveal" data-i18n="t_learning">Yang Sedang Dipelajari</h3>
+  <div class="bars reveal" id="skillBars"></div>
+</section>
+
+<!-- ================= PROJECTS ================= -->
+<section class="section" id="projects">
+  <p class="kicker reveal">// <span data-i18n="kicker_projects">karya</span></p>
+  <h2 class="section-title reveal" data-i18n="t_projects">Project</h2>
+
+  <div class="filters reveal" id="filters"></div>
+  <div class="project-grid" id="projectGrid"></div>
+
+  <div class="gh-live reveal">
+    <span class="gh-label">GitHub</span>
+    <span>Repo: <b id="ghRepos">—</b></span>
+    <span>Followers: <b id="ghFollow">—</b></span>
+    <span class="gh-note" id="ghNote"></span>
+  </div>
+</section>
+
+<!-- ================= CERTIFICATES ================= -->
+<section class="section" id="certificates">
+  <p class="kicker reveal">// <span data-i18n="kicker_certs">sertifikat</span></p>
+  <h2 class="section-title reveal" data-i18n="t_certs">Sertifikat</h2>
+
+  <div class="cert-grid" id="certGrid"></div>
+</section>
+
+<!-- ================= TERMINAL ================= -->
+<section class="section" id="terminal">
+  <p class="kicker reveal">// <span data-i18n="kicker_terminal">interaktif</span></p>
+  <h2 class="section-title reveal" data-i18n="t_terminal">Terminal</h2>
+
+  <div class="term reveal" id="term">
+    <div class="term-bar">
+      <span class="dots"><i></i><i></i><i></i></span>
+      <span class="term-title">kevin@portfolio: ~</span>
+    </div>
+    <div class="term-body" id="termBody">
+      <div id="termOut"></div>
+      <div class="term-line">
+        <span class="prompt">kevin@portfolio:~$</span>
+        <input type="text" id="termIn" autocomplete="off" spellcheck="false" aria-label="terminal input">
+      </div>
+    </div>
+    <div class="term-chips" id="termChips"></div>
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section class="section" id="contact">
+  <p class="kicker reveal">// <span data-i18n="kicker_contact">kontak</span></p>
+  <h2 class="section-title reveal" data-i18n="t_contact">Hubungi Saya</h2>
+  <p class="section-sub reveal" data-i18n="contact_sub">Terbuka untuk kerja sama, proyek freelance, atau sekadar diskusi.</p>
+
+  <div class="contact-grid">
+    <form class="contact-form reveal" id="contactForm">
+      <label>
+        <span data-i18n="f_name">Nama</span>
+        <input type="text" name="name" required autocomplete="name">
+      </label>
+      <label>
+        <span data-i18n="f_email">Email</span>
+        <input type="email" name="email" required autocomplete="email">
+      </label>
+      <label>
+        <span data-i18n="f_msg">Pesan</span>
+        <textarea name="message" rows="5" required></textarea>
+      </label>
+      <button type="submit" class="btn primary" id="sendBtn" data-i18n="f_send">Kirim</button>
+      <p class="form-note" id="formNote" role="status"></p>
+    </form>
+
+    <div class="contact-side reveal">
+      <ul class="contact-list">
+        <li><span>Email</span><a href="mailto:kevin@example.com">kevin@example.com</a></li>
+        <li><span>GitHub</span><a href="https://github.com/kevinqiendra" target="_blank" rel="noopener noreferrer">github.com/kevinqiendra</a></li>
+        <li><span>Instagram</span><a href="https://www.instagram.com/kepink4hh/" target="_blank" rel="noopener noreferrer">@kevinqiendra</a></li>
+        <li><span>Lokasi</span><b>Indonesia</b></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <p>© <span id="year"></span> Kevin Qiendra Syahputra — <span data-i18n="footer_build">dibangun manual dengan HTML, CSS, JS</span></p>
+</footer>
+
+<!-- ================= MODALS ================= -->
+<div class="modal" id="projectModal" role="dialog" aria-modal="true" aria-labelledby="pmTitle">
+  <div class="modal-card">
+    <button type="button" class="modal-x" id="pmClose" aria-label="tutup">✕</button>
+    <div class="pm-cover" id="pmCover"></div>
+    <h3 id="pmTitle">—</h3>
+    <p class="pm-meta" id="pmMeta"></p>
+    <p id="pmDesc"></p>
+    <ul class="pm-points" id="pmPoints"></ul>
+    <div class="pm-links" id="pmLinks"></div>
+  </div>
+</div>
+
+<div class="modal" id="certModal" role="dialog" aria-modal="true" aria-labelledby="cmTitle">
+  <div class="modal-card">
+    <button type="button" class="modal-x" id="cmClose" aria-label="tutup">✕</button>
+    <h3 id="cmTitle">—</h3>
+    <p class="pm-meta" id="cmMeta"></p>
+    <div class="cm-preview" id="cmPreview"></div>
+  </div>
+</div>
+
+<div class="modal doc-modal" id="docModal" role="dialog" aria-modal="true" aria-label="Dokumentasi pengalaman">
+  <div class="doc-card">
+    <button type="button" class="modal-x" id="docClose" aria-label="tutup">✕</button>
+    <div class="doc-stage">
+      <img id="docImg" src="" alt="">
+      <button type="button" class="doc-nav prev" id="docPrev" aria-label="sebelumnya">‹</button>
+      <button type="button" class="doc-nav next" id="docNext" aria-label="berikutnya">›</button>
+    </div>
+    <div class="doc-foot">
+      <p class="doc-cap" id="docCap"></p>
+      <p class="doc-count" id="docCount"></p>
+    </div>
+  </div>
+</div>
+
+<button type="button" class="to-top" id="toTop" aria-label="ke atas">↑</button>
+<div class="cursor-dot" id="cursorDot"></div>
+<div class="cursor" id="cursor"></div>
+
+<script src="https://cdn.jsdelivr.net/npm/qrcodejs@1.0.0/qrcode.min.js" defer></script>
+<script src="js/script.js" defer></script>
+</body>
+</html>
